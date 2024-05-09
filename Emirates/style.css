@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+}
+
+section.hero {
+    height: 100vh;
+    width: 100%;
+    background: url(Images/d-bachground.jpg) ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.left {
+    width: 60%;
+    height: 100%;
+    background: transparent;
+}
+
+h1.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-left: 100px;
+    user-select: none;
+}
+
+h1.logo > img {
+    height: 70px;
+    transform: translateY(16px);
+}
+
+div.right {
+    width: 40%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .1);
+}
+
+div.right nav {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a.nav {
+    color: #000;
+}
+
+button.nav-links {
+    padding: 11px 25px;
+    transform: translateY(1px);
+    font-size: 1.3rem;
+    border-radius: 200px;
+    border: hidden;
+    background: transparent;
+    transition: 1s;
+    font-weight: 600;
+    cursor: pointer;
+}   button.nav-links:hover {
+    background-color: #dbdbdb;
+    box-shadow: 0 0px 50px 0 rgba(0, 0, 0, .1), 0 0px 50px 0 rgba(0, 0, 0, .8);
+}
+
+button.menu {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: hidden;
+    border-radius: 50px;
+    padding-top: 1px;
+    font-size: 1.2rem;
+    background: transparent;
+    transition: 1s;
+}   button.menu:hover {
+    background-color: #dbdbdb;
+    box-shadow: 0 0px 50px 0 rgba(0, 0, 0, .1), 0 0px 50px 0 rgba(0, 0, 0, .8);
+}
+
+div.hero {
+    height: calc(100vh - 420px);
+    padding: 200px 130px 0px 130px;
+}
+
+h1.hero {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 900;
+}
+
+button.know {
+    height: 55px;
+    padding: 0 30px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: block;
+    position: relative;
+    top: 25%;
+    left: 140px;
+    border: hidden;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 1s;
+    background: transparent;
+    color: #dbdbdb;
+}   button.know ion-icon {
+    transform: translateY(3px);
+    transition: 1s;
+}   button.know:hover ion-icon {
+    transform: translateX(5px) translateY(3px);
+    transition: 1s;
+}   button.know:hover {
+    background: #dbdbdb;
+    color: #000;
+    box-shadow: 0 0px 70px 0 rgba(0, 0, 0, .5), 0 0px 70px 0 rgba(0, 0, 0, .8);
+}
