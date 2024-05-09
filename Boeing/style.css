@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    outline: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar-track {
+    display: none;
+}
+body::-webkit-scrollbar-track-piece {
+    display: none;
+}
+
+/* Hero */
+section.hero {
+    height: 100vh;
+    width: 100%;
+    background: url(Images/Space-X\ Rocket.jpg) top;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    height: 80px;
+    width: calc(100% - 10   0px);
+    padding-left: 50px;
+    padding-right: 50px;
+    backdrop-filter: blur(10px);
+    background: rgba(91, 114, 160, .2);
+    border-bottom: 1px solid rgba(91, 114, 160, .3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.logo {
+    height: 70px;
+    margin-top: 7px;
+    float: left;
+}
+
+a.nav1 {
+    text-decoration: none;
+    color: #dedddb;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    font-size: .95rem;
+    font-weight: 400;
+}   a.nav1::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background-color: #dedddb;
+        border-radius: 10px;
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: 1s;
+    }   a.nav1:hover:after {
+            transform: scaleX(1);
+        }
+
+input.header-search {
+    backdrop-filter: blur(200px);
+    background: rgba(91, 114, 160, 1);
+    height: 35px;
+    padding: 0 20px;
+    width: 230px;
+    border: hidden;
+    margin-right: 25px;
+    border-radius: 4px;
+    outline: none;
+    color: #f1f1f1;
+}
+
+div.hero {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+div.hero-txt {
+    height: 230px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    background: rgba(91, 114, 160, .2);
+    border-bottom: 1px solid rgba(91, 114, 160, .3);
+    border: hidden;
+    border-radius: 8px;
+    padding: 70px;
+    transform: translateX(200px);
+}
+div.hero h1 {
+    font-family: 'poppins';
+    color: #010101;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 0 15px 0;
+}
+div.hero p {
+    font-family: 'poppins';
+    color: #010101;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 0 15px 0;
+}
+div.hero button {
+    font-family: 'poppins';
+    height: 40px;
+    width: 250px;
+    border: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ccc7c2;
+    margin-top: 25px;
+    backdrop-filter: blur(200px);
+    background: rgba(91, 114, 160, 1);
+    font-size: 1rem;
+    transition: 1s;
+    transform: translateX(70px);
+}   div.hero button:hover {
+        background-color: #957166;
+        color: #dedddb;
+    }   div.hero button i {
+            transition: .7s;
+            transform: translateX(3px);
+        }   div.hero button:hover i {
+                transform: translateX(7px);
+            }
+
+
+footer {
+    height: 200px;
+    padding-top: 50px;
+    background-color: #fcfefe;
+}
+
+footer img {
+    height: 80px ;
+    transform: translateY(50px);
+}
+
+div.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer h2 {
+    font-size: 1.1rem;
+    margin-bottom: 7px;
+}
+
+footer a {
+    font-size: .9rem;
+    text-align: center;
+    color: #050505;
+    font-weight: 400;
+    margin-bottom: 5px;
+    transition: .8s ;
+}
+footer nav a:hover {
+    color: #666;
+}
+
+div.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #f6f6f6;
+}
+div.bar h2 {
+    font-size: 1.0rem;
+    color: #010101;
+    font-weight: 500;
+    transition: .7s;
+    cursor: pointer;
+}
+div.bar h2:nth-child(2):hover {
+    color: rgb(32, 75, 153);
+}
+
+footer h3 {
+    color: rgb(32, 75, 153);
+    font-size: .9rem;
+}
+
+footer h4 {
+    font-size: .75rem;
+    color: green;
+}
