@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #0c1016;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+section.hero {
+    height: 100vh;
+    width: 100%;
+    background: #0c1016;
+    background-size: cover;
+}
+
+header {
+    width: calc(100% - 250px);
+    padding: 100px 125px;
+    height: 0px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1.logo {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    user-select: none;
+}
+
+img.ico {
+    height: 70px;
+    margin-right: 15px;
+    transform: translateY(-5px);
+    float: left;
+}
+
+button.nav-btn {
+    background-color: transparent;
+    border: hidden;
+    position: fixed;
+    transform: translateX(0px) translateY(-35px);
+    color: #dbdbdb;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: 3s;
+}   button.nav-btn:hover {
+        color: #fff;
+    }
+
+
+div.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.globe {
+    float: right;
+    margin-top: 0px;
+    margin-right: 220px;
+    /* margin-left: 220px; */
+    height: 575px;
+    transition: 20s;
+}   img.globe:hover {
+        transform: rotateZ(360deg);
+    }
+
+div.p {
+    margin-left: 250px;
+    /* margin-right: 250px; */
+    margin-top: -15px;
+}
+
+div.p h1 {
+    font-size: 2.35rem;
+    color: #e4e4e4;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+button.try {
+    height: 60px;
+    width: 240px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #9356df;
+    border: #9356df 3px solid;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 1s;
+}   button.try:hover {
+        background-color: transparent;
+        color: #9356df;
+    }
+
+button.more {
+    height: 60px;
+    width: 240px;
+    background-color: transparent;
+    border: #9356df 3px solid;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 1.5s;
+    color: #9356df;
+    cursor: pointer;
+}   button.more:hover {
+        background-color: #9356df;
+        color: #000;
+    }
+
+section.why1 {
+    height: calc(100vh - 300px);
+    width: calc(100% - 300px);
+    padding: 150px;
+    background-color: #0c1016;
+}
+
+h1.why {
+    color: #e4e4e4;
+    font-size: 2.7rem;
+}
+
+a.icon {
+    margin-right: 25px;
+    font-size: 2.2rem;
+    color: #c18fff;
+    transition: 1s;
+}   a.icon:hover {
+        color: #9356df;
+    }
+
+h2.reason1 {
+    color: #9356df;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+p.reason1 {
+    color: #e1e1e1;
+    width: 800px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 55px;
+    margin-left: 35px;
+    line-height: 35px;
+}
+
+a.pcolor {
+    color: #61309c;
+    transition: 1s;
+}   a.pcolor:hover {
+        color: #9356df;
+    }
+
+img.img-reason1 {
+    float: right;
+    height: 500px;
+    border-radius: 15px;
+    transform: translateY(-450px);
+}
+
+a.icon2 {
+    margin-right: 25px;
+    color: #3365aa;
+    transition: 1s;
+    font-size: 2.2rem;
+}   a.icon2:hover {
+        color: #345788;
+    }
+
+h2.reason2 {
+    color: #3365aa;
+    margin-left: 15px;
+    font-size: 2.5rem;
+}
+
+img.img-reason2 {
+    float: left;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+
+p.reason2 {
+    color: #e1e1e1;
+    width: 800px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: 35px;
+    line-height: 35px;
+    float: right;
+}
+
+a.qcolor {
+    color: #345788;
+    transition: 1s;
+}   a.qcolor:hover {
+        color: #3365aa;
+    }
+
+h1.how {
+    color: #e4e4e4;
+    font-size: 2.7rem;
+}
+
+h2.reason3 {
+    color: #119651;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+a.icon3 {
+    margin-right: 25px;
+    color: #119651;
+    transition: 1s;
+    font-size: 2.2rem;
+}   a.icon3:hover {
+        color: #2d8b5b;
+    }
+
+ul.how1 {
+    line-height: 62px;
+    color: #e1e1e1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+a.how1 {
+    color: #2d8b5b;
+}   a.how1 {
+        color: #119651;
+    }
+
+a.lia {
+    color: #119651;
+    transition: 1s;
+}   a.lia:hover {
+        color: #2d8b5b;
+    }
+
+img.img-reason3 {
+    float: right;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 50px;transform: translateY(-550px);
+    border-radius: 15px;
+}
+
+h2.reason4 {
+    color: #b6642a;
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+a.icon4 {
+    color: #d67b3b;
+    transition: 1s;
+    font-size: 2.2rem;
+    margin-right: 25px;
+}
+
+img.img-reason4 {
+    float: left;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+
+ul.how2 {
+    float: right;
+    line-height: 62px;
+    color: #e1e1e1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: -120px;
+    margin-left: 50px;
+}
+
+a.how2 {
+    color: #9e511a;
+    transition: 1s;
+}   a.how2:hover {
+        color: #d67b3b;
+    }
+
+footer {
+    height: 60px;
+    padding: 50px 50px;
+    background-color: #0c1016;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1.flogo {
+    font-size: 2.5rem;
+    color: #e4e4e4;
+    user-select: none;
+}
+
+img.fico {
+    height: 70px;
+    margin-right: 15px;
+    transform: translateY(-5px);
+    float: left;
+}
+
+a.nav1 {
+    text-decoration: none;
+    color: #e4e4e4;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+}   a.nav1::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: #d67b3b;
+        border-radius: 10px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: .75s;
+    }   a.nav1:hover:after {
+            transform: scaleX(1);
+        }
