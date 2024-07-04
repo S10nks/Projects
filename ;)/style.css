@@ -468,13 +468,14 @@
     }
     
     div.body {
-        height: calc(100vh - 10vh);
+        height: calc(100vh - 10vh - 8vh);
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
         background-color: rgba(1, 1, 1, .2);
+        padding-bottom: 8vh;
     }
     
     div.body > img {
@@ -543,6 +544,7 @@
         justify-content: space-around;
         flex-direction: column;
         background-color: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
     }
 
     div.mobile-socialmedia {
