@@ -7,90 +7,21 @@
     font-family: 'Chakra Petch';
 }
 
-/* About Us -- HTML 5
-        <div class="abt-us" id="abt-us">
+::-webkit-scrollbar          {width: 1vh;}
+::-webkit-scrollbar-track    {background: #1f1f1f;}
+::-webkit-scrollbar-thumb    {background-color: #ffd700;}
+::-webkit-scrollbar-button   {background-color: #ffd700;}
 
-            <h1>About Us </h1>
-
-            <p> The developers at Stack have poured immense love and effort into crafting their AI frame generation and upscaling application. From the initial concept to the final product, every stage of development has been marked by meticulous attention to detail and a passion for excellence. They have spent countless hours fine-tuning algorithms to ensure flawless video enhancement, transforming standard content into breathtaking high-definition visuals. <br><br>
-                The team's dedication to innovation is evident in the seamless performance and user-friendly interface of the application. They have continually pushed the boundaries of what's possible, leveraging the latest advancements in artificial intelligence to deliver unparalleled results. Their commitment to quality is unwavering, and they strive to make every pixel perfect.<br><br>
-                This relentless pursuit of perfection drives the continuous improvement of their technology, making Stack's application a true game-changer in the digital media and entertainment industries. The developers' passion and dedication shine through in every aspect of the application, setting Stack apart as a leader in AI frame generation and upscaling.
-            </p>
-
-            <a href="">Stack: Elevate Every Frame.</a>
-
-            <nav>
-                <a href=""><button class="I">How It Works ♦</button></a>
-                <a href="Images/Stack Installer.exe" download><button class="II">Download ♣</button></a>
-            </nav>
-
-        </div>
-*/
-
-/* About Us -- CSS 3
-    
-    div.abt-us {
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(1, 1, 1, .2);
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    
-    div.abt-us > h1 {
-        color: #f1f1f1;
-        text-align: center;
-        font-size: 3.8rem;
-        padding-top: 15px;
-    }
-    
-    div.abt-us > p {
-        color: #f1f1f1;
-        width: 50%;
-        font-size: 1.25rem;
-    }
-    
-    div.abt-us > a {
-        color: #05a47f;
-        font-size: 1.35rem;
-        font-weight: 600;
-    }
-    
-    div.abt-us > a {
-        text-decoration: none;
-        color: #05a47f;
-        position: relative;
-        font-size: 1.35rem;
-        font-weight: 600;
-    }   div.abt-us > a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            width: 100%;
-            height: 2px;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            transform-origin: center;
-            transform: scaleX(0);
-            transition: 1s;
-        }   div.abt-us > a:hover:after {
-                transform: scaleX(1);
-            }
-            
-*/
-
-::-webkit-scrollbar {width: 1vh;}
-::-webkit-scrollbar-track {background: #1f1f1f;}
-::-webkit-scrollbar-thumb {background-color: #ffd700;}
-::-webkit-scrollbar-button {background-color: #ffd700;}
+button.twitter    {color: #f1f1f1;}
+button.threads    {color: #f1f1f1;}
+button.instagram  {color: #d63d69;}
+button.facebook   {color: #1188ed;}
 
 @media only screen and (min-width: 1280px) and (min-height: 720px) {
 
     section.mobile,
-    section.tablet {
+    section.tablet,
+    section.tablet-r {
         display: none;
     }
     
@@ -439,12 +370,13 @@
 @media only screen and (max-width: 430px) and (max-height: 950px) {
 
     section.main,
-    section.tablet {
+    section.tablet,
+    section.tablet-r {
         display: none;
     }
 
     section.mobile {
-        height: 130vh;
+        height: 200vh;
         width: 100%;
         background: url(Images/background.png) no-repeat;
         background-size: cover;
@@ -536,8 +468,42 @@
         font-weight: 600;
     }
 
+    div.review {
+        height: 65vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgba(1, 1, 1, .2);
+    }
+
+    div.review > h1 {
+        color: #f1f1f1;
+        text-align: center;
+        font-size: 4vh;
+    }
+
+    div.tarea {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    div.tarea > h2 {
+        color: #ffd700;
+        font-size: 2.4vh;
+    }
+
+    div.tarea > p {
+        color: #f1f1f1;
+        width: 80%;
+        text-align: center;
+    }
+
     footer {
-        height: 30vh;
+        height: 35vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -563,6 +529,7 @@
         border: hidden;
         outline: none;
     }
+
     button.twitter {color: #f1f1f1;}
     button.thread {color: #f1f1f1;}
     button.insta {color: #d63d69;}
@@ -573,6 +540,21 @@
         border-radius: 5vh;
     }
 
+    div.email {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    div.email > h2 {
+        color: #ffd700;
+        font-size: 1.5vh;
+        font-weight: 500;
+        padding: .8vh 0 ;
+    }
+
     footer > nav {
         width: 80%;
         display: flex;
@@ -581,12 +563,12 @@
     }
 
     footer > nav > a {
-        color: #bfaed1;
+        color: #e4e4e4;
         font-size: 1.5vh;
     }
 
     div.tc {
-        width: 80%;
+        width: 75%;
         padding-bottom: 1vh;
         display: flex;
         align-items: center;
@@ -595,13 +577,445 @@
     div.tc > a {
         color: #ffd700;
     }
+
 }
 
-@media only screen and (min-width: 768px) and (min-height: 1024px) and (max-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 768px) and (min-height: 1024px) and (max-width: 1025px) and (max-height: 1368px) {
+    
     section.main,
-    section.secondary {
+    section.mobile,
+    section.tablet-r {
         display: none;
     }
 
+    section.tablet {
+        height: 230vh;
+        width: 100%;
+        background: url(Images/background.png) no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -webkit-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -moz-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+    }
+
+    header > img {
+        height: 7vh;
+    }
+
+    div.body {
+        height: calc(100vh - 12vh);
+        width: 100%;
+        background-color: rgba(1, 1, 1, .2);
+    }
+
+    div.img > img {
+        height: 42vh;
+    }
+
+    div.img {
+        height: 44vh;
+        width: 100%;
+        padding-top: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    div.txt {
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    div.txt > h2 {
+        color: #f1f1f1;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    div.txt > h1 {
+        color: #ffd700;
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    div.txt > p {
+        text-align: center;
+        width: 75%;
+        color: #f1f1f1;
+        font-size: 1.9vh;
+    }
+
+    div.txt > nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    button.projx {
+        height: 5.2vh;
+        padding: 0 4vh;
+        font-size: 2vh;
+        font-weight: 600;
+        border-radius: .5vh;
+        border: #ffd700 3px solid;
+        background: transparent;
+        color: #ffd700;
+    }
+
+    button.services {
+        height: 5.2vh;
+        padding: 0 4vh;
+        font-size: 2vh;
+        font-weight: 600;
+        border-radius: .5vh;
+        border: #ffd700 3px solid;
+        background-color: #ffd700;
+        color: #1f1f1f;
+    }
+
+    div.reviews {
+        height: 80vh;
+        width: 100%;
+        background-color: rgba(1, 1, 1, .2);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    div.reviews > h1 {
+        color: #f1f1f1;
+        font-size: 5vh;
+    }
+
+    div.reviews > details {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.reviews > details > summary {
+        color: #ffd700;
+        font-size: 2.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.reviews > details > p {
+        color: #f1f1f1;
+        font-size: 2vh;
+        width: 65%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-52%);
+        position: relative;
+    }
+
+    footer {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -webkit-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -moz-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+    }
+    
+    footer > hr {
+        width: 80%;
+    }
+
+    div.tablet-socialmedia {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    button.twitter {color: #f1f1f1;}
+    button.thread {color: #f1f1f1;}
+    button.insta {color: #d63d69;}
+    button.faceb {color: #1188ed;}
+
+    div.tablet-socialmedia > a > button {
+        height: 6vh;
+        width: 6vh;
+        font-size: 6vh;
+        background-color: transparent;
+        border: hidden;
+        padding-top: 1vh;
+    }
+
+    div.email {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    div.email > h2 {
+        color: #ffd700;
+        font-weight: 500;
+    }
+
+    footer > nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    footer > nav > a {
+        color: #e4e4e4;
+        font-size: 1.8vh;
+    }
+
+    div.tc {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 1vh;
+    }
+
+    div.tc > a {
+        color: #ffd700;
+        font-size: 2.2vh;
+        font-weight: 600;
+    }
+
+}
+
+@media only screen and (min-height: 768px) and (min-width: 1024px) and (max-width: 1024px) and (max-height: 1366px) {
+
+    section.main,
+    section.mobile,
+    section.tablet {
+        display: none;
+    }
+
+    section.tablet-r {
+        height: 200vh;
+        width: 100%;
+        background: url(Images/background.png) no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -webkit-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+        -moz-box-shadow: 0px 5px 24px 2px rgba(1,1,1,0.75);
+    }
+
+    header > img {
+        height: 7vh;
+    }
+
+    header > nav > a {
+        color: #f1f1f1;
+        margin-right: 5vh;
+        font-size: 2vh;
+    }
+
+    header > nav > a > button {
+        height: 5.5vh;
+        padding: 0 4.5vh;
+        border: #ffd700 2px solid;
+        border-radius: .3vh;
+        background-color: #ffd700;
+        font-size: 2vh;
+        font-weight: 600;
+        margin-right: -2vh;
+    }
+
+    div.body {
+        height: calc(90vh - 15vh);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(1, 1, 1, .2);
+    }
+
+    div.body > img {
+        height: 50vh;
+        width: 50vh;
+    }
+    
+    div.txt {
+        width: 50vh;
+    }
+
+    div.txt > h2 {
+        color: #f1f1f1;
+        text-align: center;
+        font-size: 3.3vh;
+    }
+
+    div.txt > h1 {
+        color: #ffd700;
+        text-align: center;
+        font-size: 7vh;
+    }
+
+    div.txt > p {
+        color: #f1f1f1;
+        text-align: center;
+    }
+
+    div.txt > nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    button.projx {
+        color: #ffd700;
+        border: 2px solid #ffd700;
+        height: 6vh;
+        padding: 0 5vh;
+        border-radius: .5vh;
+        font-size: 2.2vh;
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    button.services {
+        color: #1f1f1f;
+        border: #ffd700 2px solid;
+        height: 6vh;
+        padding: 0 5vh;
+        border-radius: .5vh;
+        background-color: #ffd700;
+        font-size: 2.2vh;
+        font-weight: 600;
+    }
+
+    div.reviews {
+        height: 70vh;
+        width: 50%;
+        background-color: rgba(1, 1, 1, .2);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0 25%;
+    }
+
+    div.reviews > h1 {
+        color: #f1f1f1;
+        font-size: 5vh;
+    }
+
+    div.reviews > details > summary {
+        color: #ffd700;
+        text-align: center;
+        font-size: 2.5vh;
+    }
+
+    div.reviews > details > p {
+        color: #f1f1f1;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+
+    footer {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
+    }
+
+    footer > img {
+        height: 7vh;
+    }
+
+    div.tab-r-email {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    div.tab-r-email > h2,
+    div.tab-r-media > h2 {
+        color: #f1f1f1;
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    div.tab-r-email > input {
+        height: 5vh;
+        width: 170%;
+        color: #ffd700;
+        text-align: center;
+        background: transparent;
+        font-size: 2vh;
+        border: transparent;
+    }   div.tab-r-email > input::placeholder {
+            color: #ffd700;
+        }
+    
+    div.tab-r-media > a > button {
+        height: 6vh;
+        width: 6vh;
+        font-size: 5vh;
+        background-color: transparent;
+        margin: 1vh .8vh;
+        border: hidden;
+    }
+
+    div.foot {
+        height: 10vh;
+        width: 100%;
+        background-color: rgba(1, 1, 1, .4);
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    div.foot > a > h2 {
+        color: #f1f1f1;
+        font-weight: 500;
+        font-size: 2vh;
+    }
     
 }
